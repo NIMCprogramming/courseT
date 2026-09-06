@@ -2,6 +2,8 @@
 
 `courseT` is a small Python engine and repository template for hands-on terminal courses.
 
+Repository: https://github.com/NIMCprogramming/courseT
+
 Each course is a separate app and repository. For example, `kuberT` teaches Kubernetes and
 a future `rayT` app can teach Ray. Both apps use `courseT` for lesson data, checks, and progress.
 
