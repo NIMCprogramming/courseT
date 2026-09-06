@@ -1,0 +1,25 @@
+id: 01-start/01-welcome
+title: "Welcome"
+module: start
+order: 1
+estimated_minutes: 3
+learning_goal: "Check that your learning environment works."
+requires: [python-environment]
+intro: |
+  # Welcome
+
+  This course teaches by practice. Read the task, try it, then check your work.
+task: |
+  Run:
+
+  ```bash
+  python --version
+  ```
+hint: "The command starts with `python`."
+summary: "You checked that Python is ready."
+cheat: |
+  - `python --version` shows your Python version.
+check:
+  type: command
+  cmd: "python --version"
+  expect: "Python 3"
