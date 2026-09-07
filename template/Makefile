@@ -12,7 +12,7 @@ install:
 	uv sync --extra dev
 
 run:
-	uv run your-course next
+	uv run your-course shell
 
 test:
 	uv run pytest

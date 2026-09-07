@@ -11,6 +11,7 @@ dependencies = [
     "pyyaml>=6.0",
     "questionary>=2.0",
     "rich>=13.7",
+    "textual>=0.85",
     "typer>=0.12",
 ]
 
