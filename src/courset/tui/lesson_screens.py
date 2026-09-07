@@ -66,6 +66,11 @@ class LessonScreen(Screen[None]):
         Binding("n", "do_next", "Next lesson"),
         Binding("s", "app.pop_screen", "Skip"),
     ]
+    CSS = """
+    LessonScreen { layout: vertical; }
+    LessonScreen > VerticalScroll { height: 1fr; }
+    #output { height: 3; margin: 0 2; padding: 0 1; border: round $primary; }
+    """
 
     def __init__(
         self,
