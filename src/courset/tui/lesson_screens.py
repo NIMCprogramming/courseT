@@ -122,11 +122,8 @@ class LessonScreen(Screen[None]):
 
     def on_mount(self) -> None:
         ok, message = self._check_requirements()
-        self.query_one("#output", RichLog).write(
-            "[dim]c check/read, h hint, w warm-up, r review, n next, Esc back[/dim]"
-            if ok
-            else f"[red]{message}[/red]"
-        )
+        if not ok:
+            self.query_one("#output", RichLog).write(f"[red]{message}[/red]")
 
     def _check_requirements(self) -> tuple[bool, str]:
         for requirement in self.lesson.requires:
